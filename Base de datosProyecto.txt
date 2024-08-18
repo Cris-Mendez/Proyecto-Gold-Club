@@ -1,0 +1,38 @@
+CREATE DATABASE IF NOT EXISTS inicioseccion2;
+
+USE inicioseccion2;
+
+-- Tabla de usuarios
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    correo_electronico VARCHAR(255) NOT NULL UNIQUE,
+    codigo_empleado VARCHAR(255) NOT NULL,
+    contrasena VARCHAR(255) NOT NULL
+);
+
+-- Tabla de productos
+CREATE TABLE IF NOT EXISTS productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    descripcion TEXT,
+    precio DECIMAL(10, 2) NOT NULL,
+    cantidad INT NOT NULL
+);
+
+-- Insertar datos de prueba en productos
+INSERT INTO productos (nombre, descripcion, precio, cantidad) VALUES
+('Producto 1', 'Descripción del Producto 1', 10.00, 100),
+('Producto 2', 'Descripción del Producto 2', 20.00, 200),
+('Producto 3', 'Descripción del Producto 3', 30.00, 300),
+('Producto 4', 'Descripción del Producto 4', 40.00, 400),
+('Producto 5', 'Descripción del Producto 5', 50.00, 500),
+('Producto 6', 'Descripción del Producto 6', 60.00, 600),
+('Producto 7', 'Descripción del Producto 7', 70.00, 700),
+('Producto 8', 'Descripción del Producto 8', 80.00, 800);
+
+INSERT INTO productos (nombre, descripcion, precio, cantidad) VALUES
+('Producto 9', 'Descripción del Producto 8', 100.00, 800);
+
+-- Insertar un usuario de prueba
+INSERT INTO usuarios (correo_electronico, codigo_empleado, contrasena) VALUES
+('usuario@ejemplo.com', '12345', MD5('password123'));
