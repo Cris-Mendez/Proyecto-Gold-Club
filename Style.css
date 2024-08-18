@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+    background-image: url("Untitled.png");
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen en el contenedor */
+    font-family: 'Love Ya Like A Sister', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 120px; /* Tamaño grande del texto */
+    margin-top: 5px; /* Margen superior */
+    text-align: center;
+}
+
+form {
+    max-width: 320px;
+    margin: 20px auto;
+    padding: 20px;
+    background: transparent; /* Fondo transparente */
+    border-radius: 8px;
+    box-shadow: none; /* Sin sombra */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    max-width: 300px; /* Ancho máximo de los campos */
+    margin: 0 auto 15px auto; /* Margen inferior y centrado */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff; /* Fondo blanco para los campos */
+}
+
+/* Estilo de los botones */
+button,
+a {
+    display: inline-block;
+    width: 45%; /* Ancho de los botones igual */
+    padding: 10px;
+    border-radius: 20px; /* Bordes obalados */
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    border: none;
+}
+
+button:hover {
+    background-color: #333; /* Fondo negro más oscuro en hover */
+}
+
+a {
+    color: #000; /* Texto negro */
+    border: 1px solid #000; /* Borde negro */
+    margin: 0; /* Sin margen */
+}
+
+a:hover {
+    background-color: #000; /* Fondo negro en hover */
+    color: #fff; /* Texto blanco en hover */
+}
+
+/* Contenedor de botones */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espacio igual entre los botones */
+    gap: 20px; /* Aumentar el espacio entre los botones */
+    margin-top: 10px; /* Margen superior para separación de los campos */
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    button,
+    a {
+        font-size: 14px;
+    }
+
+    /* Adaptar el contenedor de botones para móviles */
+    .button-container {
+        flex-direction: column; /* Botones en columna en pantallas pequeñas */
+        gap: 10px; /* Espacio entre los botones en columna */
+    }
+}
+/* Estilo para el placeholder */
+input::placeholder {
+    font-family: 'Love Ya Like A Sister', sans-serif; /* Cambia el tipo de letra del placeholder */
+    color: #000000; /* Color del texto del placeholder */
+    font-size: 14px; /* Tamaño del texto del placeholder */
+}
+
