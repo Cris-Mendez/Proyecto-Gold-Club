@@ -32,7 +32,8 @@ label {
 }
 
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="employed"] {
     width: 100%;
     max-width: 300px; /* Ancho máximo de los campos */
     margin: 0 auto 15px auto; /* Margen inferior y centrado */
@@ -98,6 +99,7 @@ a:hover {
 
     input[type="email"],
     input[type="password"],
+    input[type="employed"],
     button,
     a {
         font-size: 14px;

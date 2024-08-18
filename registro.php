@@ -12,7 +12,7 @@
     <title>Registro</title>
 </head>
 <body>
-    <h1 style="font-family: 'Love Ya Like A Sister';">REGISTRO</h1>
+    <h1 style="font-family: 'Love Ya Like A Sister';">GOLD <BR> CLUB</h1>
     <form action="registro_handler.php" method="post">
         <?php
         if (isset($_GET['error'])) {
@@ -25,7 +25,7 @@
 
         <i></i>
         <label style="font-family: 'Love Ya Like A Sister';"></label>
-        <input type="text" name="codigo_empleado" placeholder="Employee Code" required>
+        <input type="employed" name="codigo_empleado" placeholder="Employee Code" required>
 
         <i></i>
         <label style="font-family: 'Love Ya Like A Sister';"></label>

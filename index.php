@@ -13,7 +13,7 @@
     <title>Gold Club</title>
 </head>
 <body>
-    <h1 style="font-family: 'Love Ya Like A Sister';">GOLD <br> CLUB</h1>
+    <h1>GOLD <br> CLUB</h1>
     <form action="login.php" method="post">
         <?php
         if (isset($_GET['error'])) {
